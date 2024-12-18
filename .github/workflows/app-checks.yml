@@ -6,7 +6,7 @@ on:
       - release
 
 jobs:
-  release:
+  app-checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
