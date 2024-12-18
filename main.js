@@ -1,1 +1,3 @@
-console.log("Main Program")
+console.log("First log")
+console.log("Second log")
+console.log("Third log")
