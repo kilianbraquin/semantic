@@ -1,9 +1,9 @@
 name: App Checks
 on:
-  push:
+  pull_request_target:
+    types: [synchronize]
     branches:
       - main
-      - release
 
 jobs:
   app-checks:
