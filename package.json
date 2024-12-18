@@ -4,6 +4,9 @@
   "type": "module",
   "version": "2.0.3",
   "main": "index.js",
+  "scripts": {
+    "build": "pnpm install"
+  },
   "dependencies": {
     "@semantic-release/git": "^10.0.1",
     "semantic-release": "^24.2.0"
