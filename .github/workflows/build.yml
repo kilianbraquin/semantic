@@ -1,11 +1,11 @@
-name: Test
+name: Build
 on:
   push:
     branches:
       - release
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,6 +20,6 @@ jobs:
           node-version: 20
           cache: "pnpm"
       - run: pnpm install
-      - run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - run: npx semantic-release
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
