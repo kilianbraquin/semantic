@@ -22,10 +22,10 @@
       [
         "@semantic-release/git",
         {
+          "message": "chore: Release v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
           "assets": [
             "package.json"
-          ],
-          "message": "chore: Release v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+          ]
         }
       ],
       "@semantic-release/github"
